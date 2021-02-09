@@ -56,38 +56,48 @@ var errorList = []
 var clientErrorList = []
 
 When(`compare all registered Clients`, () => {
-    //Remover Propriedade ._ID
-    Response_Meets.forEach(element => {
-        delete element._id
-    });
-    Response_Front.forEach(element => {
-        delete element._id
-    });    
-    //Remover Clientes Duplicados
-    const uniqueClientsMeets = Array.from(new Set(Response_Meets.map(e => e.nome))).map(nome => {
-        return Response_Meets.find(e => e.nome === nome)
+    Client.get_Frontend_Clients().then(response_Front => {
+        Client.get_Meets_Clients().then(response_Meets => {
+            cy.log("RESPONSE: " + JSON.stringify(response_Front.body))
+            cy.log("RESPONSE: " + JSON.stringify(response_Meets.body))
+
+            cy.wrap({response_Front}).as("Response_Front")
+            cy.wrap({response_Meets}).as("Response_Meets")
+        })
+        
     })
-    const uniqueClientsFront = Array.from(new Set(Response_Front.map(e => e.nome))).map(nome => {
-        return Response_Front.find(e => e.nome === nome)
-    })
-    //Criacao das Listas
-    var nameList = uniqueClientsMeets.map(e => e.nome)
-    var filterList = uniqueClientsFront.filter(e => nameList.includes(e.nome))
-    //Teste de Validacao
-    for (let index = 0; index < filterList.length; index++) {
-        if (JSON.stringify(filterList[index]) !== JSON.stringify(uniqueClientsMeets[index])) {
-            errorList.push(nameList[index])
-        }        
-    }
-    //Lista dos Clientes com Erros (Objetos)
-    clientErrorList = filterList.filter(e => errorList.includes(e.nome))
-    clientErrorList.push(Response_Front.filter(e => !nameList.includes(e.nome)))
 });
 
 Then(`should return an Array with wrong Clients`, () => {
-    if (errorList.length > 0) {
-        cy.log("Clientes com Erro: " + JSON.stringify(clientErrorList))
-    } else {
-        cy.log("Todos os Clientes passaram")
-    }
+    cy.get("@Response_Front").then(when_front => {
+        cy.get("@Response_Meets").then(when_meets => {
+
+            for(let i = 0; i < when_front.response_Front.body.length; i++){
+                let was_found = false
+                for(let j = 0; j < when_meets.response_Meets.body.length; j++){
+                    if(when_front.response_Front.body[i].nome == when_meets.response_Meets.body[j].nome){
+
+                        was_found = true
+                        expect(when_front.response_Front.body[i].nome).to.eq(when_meets.response_Meets.body[j].nome)
+                        expect(when_front.response_Front.body[i].cpf).to.eq(when_meets.response_Meets.body[j].cpf)
+                        expect(when_front.response_Front.body[i].nascimento).to.eq(when_meets.response_Meets.body[j].nascimento)
+                        expect(when_front.response_Front.body[i].email).to.eq(when_meets.response_Meets.body[j].email)
+                        expect(when_front.response_Front.body[i].celular).to.eq(when_meets.response_Meets.body[j].celular)
+                        expect(when_front.response_Front.body[i].cep).to.eq(when_meets.response_Meets.body[j].cep)
+                        expect(when_front.response_Front.body[i].logradouro).to.eq(when_meets.response_Meets.body[j].logradouro)
+                        expect(when_front.response_Front.body[i].numero).to.eq(when_meets.response_Meets.body[j].numero)
+                        expect(when_front.response_Front.body[i].bairro).to.eq(when_meets.response_Meets.body[j].bairro)
+                        expect(when_front.response_Front.body[i].cidade).to.eq(when_meets.response_Meets.body[j].cidade)
+                        expect(when_front.response_Front.body[i].pais).to.eq(when_meets.response_Meets.body[j].pais)
+
+                    } else if(was_found == false) {
+                        cy.log(when_front.response_Front.body[i].nome + " não encontrado")
+                    }
+                }
+
+            }
+
+            
+        })
+    })
 });
