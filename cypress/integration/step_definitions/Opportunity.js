@@ -60,10 +60,57 @@ Then(`should return a non-null body`, () => {
 //@get_Compare_Oportunity
 
 When(`request to compare the registered opportunities`, () => {
-    //Frontend com Meet
-	return true;
+    Opportunity.get_Frontend_Opportunities().then(response_Front => {
+        Opportunity.get_Meets_Opportunities().then(response_Meets => {
+            cy.log("RESPONSE: " + JSON.stringify(response_Front.body))
+            cy.log("RESPONSE: " + JSON.stringify(response_Meets.body))
+
+            cy.wrap({response_Front}).as("Response_Front")
+            cy.wrap({response_Meets}).as("Response_Meets")
+        })
+        
+    })
 });
 
 Then(`should return the correct data`, () => {
-	return true;
+	cy.get("@Response_Front").then(when_front => {
+        cy.get("@Response_Meets").then(when_meets => {
+
+            for(let i = 0; i < when_front.response_Front.body.length; i++){
+                for(let j = 0; j < when_meets.response_Meets.body.length; j++){
+                    if(when_front.response_Front.body[i].nome == when_meets.response_Meets.body[j].nome){
+
+                        expect(when_front.response_Front.body[i].nome).to.eq(when_meets.response_Meets.body[j].nome)
+                        expect(when_front.response_Front.body[i].tipo_pessoa).to.eq(when_meets.response_Meets.body[j].tipo_pessoa)
+                        expect(when_front.response_Front.body[i].cpf_cnpj).to.eq(when_meets.response_Meets.body[j].cpf_cnpj)
+                        expect(when_front.response_Front.body[i].celular).to.eq(when_meets.response_Meets.body[j].celular)
+                        expect(when_front.response_Front.body[i].email).to.eq(when_meets.response_Meets.body[j].email)
+                        expect(when_front.response_Front.body[i].telefone).to.eq(when_meets.response_Meets.body[j].telefone)
+                        expect(when_front.response_Front.body[i].area).to.eq(when_meets.response_Meets.body[j].area)
+                        expect(when_front.response_Front.body[i].origem).to.eq(when_meets.response_Meets.body[j].origem)
+                        expect(when_front.response_Front.body[i].cidade).to.eq(when_meets.response_Meets.body[j].cidade)
+                        expect(when_front.response_Front.body[i].uf).to.eq(when_meets.response_Meets.body[j].uf)
+                        expect(when_front.response_Front.body[i].status).to.eq(when_meets.response_Meets.body[j].status)
+                        expect(when_front.response_Front.body[i].responsavel).to.eq(when_meets.response_Meets.body[j].responsavel)
+                        expect(when_front.response_Front.body[i].equipe).to.eq(when_meets.response_Meets.body[j].equipe)
+                        expect(when_front.response_Front.body[i].valor).to.eq(when_meets.response_Meets.body[j].valor)
+                        expect(when_front.response_Front.body[i].descricao).to.eq(when_meets.response_Meets.body[j].descricao)
+                        expect(when_front.response_Front.body[i].etapa).to.eq(when_meets.response_Meets.body[j].etapa)
+                        expect(when_front.response_Front.body[i].contato_nome).to.eq(when_meets.response_Meets.body[j].contato_nome)
+                        expect(when_front.response_Front.body[i].contato_cargo).to.eq(when_meets.response_Meets.body[j].contato_cargo)
+                        expect(when_front.response_Front.body[i].contato_email).to.eq(when_meets.response_Meets.body[j].contato_email)
+                        expect(when_front.response_Front.body[i].contato_telefone).to.eq(when_meets.response_Meets.body[j].contato_telefone)
+                        expect(when_front.response_Front.body[i].contato_celular).to.eq(when_meets.response_Meets.body[j].contato_celular)
+
+
+
+
+                    }
+                }
+
+            }
+
+            
+        })
+    })
 });

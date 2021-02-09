@@ -73,11 +73,10 @@ Then(`should return an Array with wrong Clients`, () => {
         cy.get("@Response_Meets").then(when_meets => {
 
             for(let i = 0; i < when_front.response_Front.body.length; i++){
-                let was_found = false
                 for(let j = 0; j < when_meets.response_Meets.body.length; j++){
                     if(when_front.response_Front.body[i].nome == when_meets.response_Meets.body[j].nome){
 
-                        was_found = true
+                        
                         expect(when_front.response_Front.body[i].nome).to.eq(when_meets.response_Meets.body[j].nome)
                         expect(when_front.response_Front.body[i].cpf).to.eq(when_meets.response_Meets.body[j].cpf)
                         expect(when_front.response_Front.body[i].nascimento).to.eq(when_meets.response_Meets.body[j].nascimento)
@@ -90,9 +89,7 @@ Then(`should return an Array with wrong Clients`, () => {
                         expect(when_front.response_Front.body[i].cidade).to.eq(when_meets.response_Meets.body[j].cidade)
                         expect(when_front.response_Front.body[i].pais).to.eq(when_meets.response_Meets.body[j].pais)
 
-                    } else if(was_found == false) {
-                        cy.log(when_front.response_Front.body[i].nome + " não encontrado")
-                    }
+                    } 
                 }
 
             }
