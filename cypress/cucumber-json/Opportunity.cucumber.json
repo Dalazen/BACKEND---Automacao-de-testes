@@ -36,7 +36,7 @@
             "name": "request all Meets registered Opportunities",
             "result": {
               "status": "passed",
-              "duration": 401000000
+              "duration": 611000000
             }
           },
           {
@@ -45,9 +45,8 @@
             "line": 7,
             "name": "should return the response 'get_Opportunity' status 200",
             "result": {
-              "status": "failed",
-              "duration": 34000000,
-              "error_message": "Error: SCHEMA VALIDATION ERROR: \nis not of a type(s) object\n    at Context.eval (https://api-desafio.vercel.app/__cypress/tests?p=cypress\\support\\index.js:43:13)\nFrom previous event:\n    at Context.thenFn (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:155135:23)\n    at Context.then (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:155574:21)\n    at Context.<anonymous> (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:170040:21)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169464:15\nFrom previous event:\n    at runCommand (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169443:8)\n    at next (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169589:14)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169617:16\nFrom previous event:\n    at next (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169589:34)\nFrom previous event:\n    at Promise.catch.err.name (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169630:37)\nFrom previous event:\n    at run (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169623:21)\n    at $Cy.cy.<computed> [as then] (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:170080:11)\n    at Context.runnable.fn (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:170304:21)\n    at callFn (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104227:21)\n    at Test.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104214:7)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175908:28\nFrom previous event:\n    at Object.onRunnableRun (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175896:17)\n    at $Cypress.action (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:166440:28)\n    at Test.Runnable.run (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:174282:13)\n    at Runner.../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104886:10)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:105012:12\n    at next (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104795:14)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104805:7\n    at next (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104707:14)\n    at Hook.<anonymous> (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104768:7)\n    at next (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175829:22)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175851:11\nFrom previous event:\n    at onNext (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175848:57)\n    at done (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104167:5)\n    at callFn (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104250:7)\n    at Hook.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104214:7)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175908:28\nFrom previous event:\n    at Object.onRunnableRun (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175896:17)\n    at $Cypress.action (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:166440:28)\n    at Hook.Runnable.run (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:174282:13)\n    at next (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104729:10)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104773:5\n    at timeslice (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:98699:27)"
+              "status": "passed",
+              "duration": 42000000
             }
           },
           {
@@ -56,7 +55,8 @@
             "line": 8,
             "name": "should return a non-null body",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7000000
             }
           }
         ]
@@ -85,7 +85,7 @@
             "name": "request all Front-end registered Opportunities",
             "result": {
               "status": "passed",
-              "duration": 310000000
+              "duration": 255000000
             }
           },
           {
@@ -94,9 +94,8 @@
             "line": 13,
             "name": "should return the response 'get_Opportunity' status 200",
             "result": {
-              "status": "failed",
-              "duration": 18000000,
-              "error_message": "Error: SCHEMA VALIDATION ERROR: \nis not of a type(s) object\n    at Context.eval (https://api-desafio.vercel.app/__cypress/tests?p=cypress\\support\\index.js:43:13)\nFrom previous event:\n    at Context.thenFn (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:155135:23)\n    at Context.then (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:155574:21)\n    at Context.<anonymous> (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:170040:21)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169464:15\nFrom previous event:\n    at runCommand (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169443:8)\n    at next (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169589:14)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169617:16\nFrom previous event:\n    at next (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169589:34)\nFrom previous event:\n    at Promise.catch.err.name (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169630:37)\nFrom previous event:\n    at run (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:169623:21)\n    at $Cy.cy.<computed> [as then] (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:170080:11)\n    at Context.runnable.fn (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:170304:21)\n    at callFn (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104227:21)\n    at Test.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104214:7)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175908:28\nFrom previous event:\n    at Object.onRunnableRun (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175896:17)\n    at $Cypress.action (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:166440:28)\n    at Test.Runnable.run (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:174282:13)\n    at Runner.../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104886:10)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:105012:12\n    at next (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104795:14)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104805:7\n    at next (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104707:14)\n    at Hook.<anonymous> (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104768:7)\n    at next (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175829:22)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175851:11\nFrom previous event:\n    at onNext (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175848:57)\n    at done (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104167:5)\n    at callFn (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104250:7)\n    at Hook.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104214:7)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175908:28\nFrom previous event:\n    at Object.onRunnableRun (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:175896:17)\n    at $Cypress.action (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:166440:28)\n    at Hook.Runnable.run (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:174282:13)\n    at next (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104729:10)\n    at https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:104773:5\n    at timeslice (https://api-desafio.vercel.app/__cypress/runner/cypress_runner.js:98699:27)"
+              "status": "passed",
+              "duration": 23000000
             }
           },
           {
@@ -105,7 +104,8 @@
             "line": 14,
             "name": "should return a non-null body",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 15000000
             }
           }
         ]
@@ -134,7 +134,7 @@
             "name": "request to compare the registered opportunities",
             "result": {
               "status": "passed",
-              "duration": 32000000
+              "duration": 31000000
             }
           },
           {
@@ -144,7 +144,7 @@
             "name": "should return the correct data",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 4000000
             }
           }
         ]

@@ -1,257 +1,322 @@
 {
-    "type": "object",
-    "title": "The root schema",
-    "description": "The root schema comprises the entire JSON document.",
-    "default": {},
-    "examples": [
-        {
-            "_id": "601aef63ec4c15000841d52f",
-            "nome": "Test Automation Myron",
-            "tipo_pessoa": "Pessoa Física",
-            "cpf_cnpj": "169.682.991-78",
-            "celular": "54999993880",
-            "email": "teste.Ulysses.66@mailsac.com",
-            "telefone": "5433802242",
-            "area": "OUTROS",
-            "origem": "LISTA TELEFÔNICA",
-            "cidade": "Marctown",
-            "uf": "RS",
-            "status": "ATIVO",
-            "responsavel": "desafio automation",
-            "equipe": " ",
-            "valor": 8,
-            "descricao": "12/10/1999",
-            "etapa": " - Fechamento",
-            "contato_nome": "Test Automation Myron contato",
-            "contato_cargo": "Venus",
-            "contato_email": "teste.Ulysses.66@mailsac.com",
-            "contato_telefone": "5433802242",
-            "contato_celular": "54999993880"
-        }
-    ],
-    "required": [
-        "_id",
-        "nome",
-        "tipo_pessoa",
-        "cpf_cnpj",
-        "celular",
-        "email",
-        "telefone",
-        "area",
-        "origem",
-        "cidade",
-        "uf",
-        "status",
-        "responsavel",
-        "equipe",
-        "valor",
-        "descricao",
-        "etapa",
-        "contato_nome",
-        "contato_cargo",
-        "contato_email",
-        "contato_telefone",
-        "contato_celular"
-    ],
-    "properties": {
-        "_id": {
-            "type": "string",
-            "title": "The _id schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "601aef63ec4c15000841d52f"
-            ]
-        },
-        "nome": {
-            "type": "string",
-            "title": "The nome schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "Test Automation Myron"
-            ]
-        },
-        "tipo_pessoa": {
-            "type": "string",
-            "title": "The tipo_pessoa schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "Pessoa Física"
-            ]
-        },
-        "cpf_cnpj": {
-            "type": "string",
-            "title": "The cpf_cnpj schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "169.682.991-78"
-            ]
-        },
-        "celular": {
-            "type": "string",
-            "title": "The celular schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "54999993880"
-            ]
-        },
-        "email": {
-            "type": "string",
-            "title": "The email schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "teste.Ulysses.66@mailsac.com"
-            ]
-        },
-        "telefone": {
-            "type": "string",
-            "title": "The telefone schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "5433802242"
-            ]
-        },
-        "area": {
-            "type": "string",
-            "title": "The area schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "OUTROS"
-            ]
-        },
-        "origem": {
-            "type": "string",
-            "title": "The origem schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "LISTA TELEFÔNICA"
-            ]
-        },
-        "cidade": {
-            "type": "string",
-            "title": "The cidade schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "Marctown"
-            ]
-        },
-        "uf": {
-            "type": "string",
-            "title": "The uf schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "RS"
-            ]
-        },
-        "status": {
-            "type": "string",
-            "title": "The status schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "ATIVO"
-            ]
-        },
-        "responsavel": {
-            "type": "string",
-            "title": "The responsavel schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "desafio automation"
-            ]
-        },
-        "equipe": {
-            "type": "string",
-            "title": "The equipe schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                " "
-            ]
-        },
-        "valor": {
-            "type": "integer",
-            "title": "The valor schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": 0,
-            "examples": [
-                8
-            ]
-        },
-        "descricao": {
-            "type": "string",
-            "title": "The descricao schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "12/10/1999"
-            ]
-        },
-        "etapa": {
-            "type": "string",
-            "title": "The etapa schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                " - Fechamento"
-            ]
-        },
-        "contato_nome": {
-            "type": "string",
-            "title": "The contato_nome schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "Test Automation Myron contato"
-            ]
-        },
-        "contato_cargo": {
-            "type": "string",
-            "title": "The contato_cargo schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "Venus"
-            ]
-        },
-        "contato_email": {
-            "type": "string",
-            "title": "The contato_email schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "teste.Ulysses.66@mailsac.com"
-            ]
-        },
-        "contato_telefone": {
-            "type": "string",
-            "title": "The contato_telefone schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "5433802242"
-            ]
-        },
-        "contato_celular": {
-            "type": "string",
-            "title": "The contato_celular schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-                "54999993880"
-            ]
-        }
-    },
-    "additionalProperties": true
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": [],
+  "examples": [
+      [
+          {
+              "_id": "602184992693e000099461df",
+              "nome": "OpTest Automation Boris",
+              "tipo_pessoa": "Pessoa Física",
+              "cpf_cnpj": "159.076.925-29",
+              "celular": "54999997867",
+              "email": "teste.Londa.92@mailsac.com",
+              "telefone": "5433804119",
+              "area": "ENGENHARIA",
+              "origem": "CATÁLOGO",
+              "cidade": "Port Cecily",
+              "uf": "--",
+              "status": "ATIVO",
+              "responsavel": " desafio automation",
+              "equipe": "",
+              "valor": 45,
+              "descricao": "23/05/1982",
+              "etapa": "Serviços - Venda",
+              "contato_nome": "Test Automation Boris contato",
+              "contato_cargo": "Jupiter",
+              "contato_email": "teste.Londa.92@mailsac.com",
+              "contato_telefone": "5433804119",
+              "contato_celular": "54999997867"
+          }
+      ]
+  ],
+  "additionalItems": true,
+  "items": {
+      "$id": "#/items",
+      "anyOf": [
+          {
+              "$id": "#/items/anyOf/0",
+              "type": "object",
+              "title": "The first anyOf schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": {},
+              "examples": [
+                  {
+                      "_id": "602184992693e000099461df",
+                      "nome": "OpTest Automation Boris",
+                      "tipo_pessoa": "Pessoa Física",
+                      "cpf_cnpj": "159.076.925-29",
+                      "celular": "54999997867",
+                      "email": "teste.Londa.92@mailsac.com",
+                      "telefone": "5433804119",
+                      "area": "ENGENHARIA",
+                      "origem": "CATÁLOGO",
+                      "cidade": "Port Cecily",
+                      "uf": "--",
+                      "status": "ATIVO",
+                      "responsavel": " desafio automation",
+                      "equipe": "",
+                      "valor": 45,
+                      "descricao": "23/05/1982",
+                      "etapa": "Serviços - Venda",
+                      "contato_nome": "Test Automation Boris contato",
+                      "contato_cargo": "Jupiter",
+                      "contato_email": "teste.Londa.92@mailsac.com",
+                      "contato_telefone": "5433804119",
+                      "contato_celular": "54999997867"
+                  }
+              ],
+              "required": [
+                  "_id",
+                  "nome",
+                  "tipo_pessoa",
+                  "cpf_cnpj",
+                  "celular",
+                  "email",
+                  "telefone",
+                  "area",
+                  "origem",
+                  "cidade",
+                  "uf",
+                  "status",
+                  "responsavel",
+                  "equipe",
+                  "valor",
+                  "descricao",
+                  "etapa",
+                  "contato_nome",
+                  "contato_cargo",
+                  "contato_email",
+                  "contato_telefone",
+                  "contato_celular"
+              ],
+              "properties": {
+                  "_id": {
+                      "$id": "#/items/anyOf/0/properties/_id",
+                      "type": "string",
+                      "title": "The _id schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "602184992693e000099461df"
+                      ]
+                  },
+                  "nome": {
+                      "$id": "#/items/anyOf/0/properties/nome",
+                      "type": "string",
+                      "title": "The nome schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "OpTest Automation Boris"
+                      ]
+                  },
+                  "tipo_pessoa": {
+                      "$id": "#/items/anyOf/0/properties/tipo_pessoa",
+                      "type": "string",
+                      "title": "The tipo_pessoa schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "Pessoa Física"
+                      ]
+                  },
+                  "cpf_cnpj": {
+                      "$id": "#/items/anyOf/0/properties/cpf_cnpj",
+                      "type": "string",
+                      "title": "The cpf_cnpj schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "159.076.925-29"
+                      ]
+                  },
+                  "celular": {
+                      "$id": "#/items/anyOf/0/properties/celular",
+                      "type": "string",
+                      "title": "The celular schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "54999997867"
+                      ]
+                  },
+                  "email": {
+                      "$id": "#/items/anyOf/0/properties/email",
+                      "type": "string",
+                      "title": "The email schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "teste.Londa.92@mailsac.com"
+                      ]
+                  },
+                  "telefone": {
+                      "$id": "#/items/anyOf/0/properties/telefone",
+                      "type": "string",
+                      "title": "The telefone schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "5433804119"
+                      ]
+                  },
+                  "area": {
+                      "$id": "#/items/anyOf/0/properties/area",
+                      "type": "string",
+                      "title": "The area schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "ENGENHARIA"
+                      ]
+                  },
+                  "origem": {
+                      "$id": "#/items/anyOf/0/properties/origem",
+                      "type": "string",
+                      "title": "The origem schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "CATÁLOGO"
+                      ]
+                  },
+                  "cidade": {
+                      "$id": "#/items/anyOf/0/properties/cidade",
+                      "type": "string",
+                      "title": "The cidade schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "Port Cecily"
+                      ]
+                  },
+                  "uf": {
+                      "$id": "#/items/anyOf/0/properties/uf",
+                      "type": "string",
+                      "title": "The uf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "--"
+                      ]
+                  },
+                  "status": {
+                      "$id": "#/items/anyOf/0/properties/status",
+                      "type": "string",
+                      "title": "The status schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "ATIVO"
+                      ]
+                  },
+                  "responsavel": {
+                      "$id": "#/items/anyOf/0/properties/responsavel",
+                      "type": "string",
+                      "title": "The responsavel schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          " desafio automation"
+                      ]
+                  },
+                  "equipe": {
+                      "$id": "#/items/anyOf/0/properties/equipe",
+                      "type": "string",
+                      "title": "The equipe schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          ""
+                      ]
+                  },
+                  "valor": {
+                      "$id": "#/items/anyOf/0/properties/valor",
+                      "type": "integer",
+                      "title": "The valor schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0,
+                      "examples": [
+                          45
+                      ]
+                  },
+                  "descricao": {
+                      "$id": "#/items/anyOf/0/properties/descricao",
+                      "type": "string",
+                      "title": "The descricao schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "23/05/1982"
+                      ]
+                  },
+                  "etapa": {
+                      "$id": "#/items/anyOf/0/properties/etapa",
+                      "type": "string",
+                      "title": "The etapa schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "Serviços - Venda"
+                      ]
+                  },
+                  "contato_nome": {
+                      "$id": "#/items/anyOf/0/properties/contato_nome",
+                      "type": "string",
+                      "title": "The contato_nome schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "Test Automation Boris contato"
+                      ]
+                  },
+                  "contato_cargo": {
+                      "$id": "#/items/anyOf/0/properties/contato_cargo",
+                      "type": "string",
+                      "title": "The contato_cargo schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "Jupiter"
+                      ]
+                  },
+                  "contato_email": {
+                      "$id": "#/items/anyOf/0/properties/contato_email",
+                      "type": "string",
+                      "title": "The contato_email schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "teste.Londa.92@mailsac.com"
+                      ]
+                  },
+                  "contato_telefone": {
+                      "$id": "#/items/anyOf/0/properties/contato_telefone",
+                      "type": "string",
+                      "title": "The contato_telefone schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "5433804119"
+                      ]
+                  },
+                  "contato_celular": {
+                      "$id": "#/items/anyOf/0/properties/contato_celular",
+                      "type": "string",
+                      "title": "The contato_celular schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                          "54999997867"
+                      ]
+                  }
+              },
+              "additionalProperties": true
+          }
+      ]
+  }
 }

@@ -15,11 +15,11 @@ When(`request all Meets registered Opportunities`, () => {
 
 Then(`should return the response {string} status {int}`, (schema, status) => {
 	cy.get("@Response").then(when => {
-        /* var n = 0
+         var n = 0
         while (when.response.body[n]) {
             cy.validateSchema(when.response.body[n], `${schema}/${status}`)
             n++
-        } */
+        } 
         expect(when.response.status).to.equal(status)
     })
 });
@@ -42,11 +42,11 @@ When(`request all Front-end registered Opportunities`, () => {
 
 Then(`should return the response {string} status {int}`, (schema, status) => {
 	cy.get("@Response").then(when => {
-       /*  var n = 0
+        var n = 0
         while (when.response.body[n]) {
             cy.validateSchema(when.response.body[n], `${schema}/${status}`)
             n++
-        } */
+        }
         expect(when.response.status).to.equal(status)
     })
 });
